@@ -1,0 +1,14 @@
+ar\com\eduacionit\app\ws\meli\client\dto\cetegory\PathFromRoot.class
+ar\com\educacionit\ws\rest\client\ProductoWSRestClient.class
+ar\com\educacionit\ws\rest\client\ProductoWSRestClient2.class
+ar\com\educacionit\ws\rest\client\ProductoWSRestClient$1.class
+ar\com\educacionit\ws\rest\client\client\SiteRestExecutor.class
+ar\com\educacionit\ws\rest\client\client\RestRequestExecutor.class
+ar\com\educacionit\ws\rest\client\client\SiteRestExecutor$1.class
+ar\com\eduacionit\app\ws\meli\client\dto\site\Site.class
+ar\com\educacionit\ws\rest\client\client\ProductoRestExecutor.class
+ar\com\educacionit\ws\rest\client\MercadoLibreRestClient.class
+ar\com\educacionit\ws\rest\client\client\CategoryRestExecutor.class
+ar\com\eduacionit\app\ws\meli\client\dto\cetegory\ChildCategories.class
+ar\com\eduacionit\app\ws\meli\client\dto\cetegory\Categoria.class
+ar\com\eduacionit\app\ws\meli\client\dto\cetegory\Settings.class

@@ -1,0 +1,5 @@
+ar\com\educacionit\services\exceptions\ServiceException.class
+ar\com\educacionit\service\impl\UserServiceImpl.class
+ar\com\educacionit\service\ProductoService.class
+ar\com\educacionit\service\impl\ProductoServiceImpl.class
+ar\com\educacionit\service\UserService.class

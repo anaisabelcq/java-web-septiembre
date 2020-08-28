@@ -1,0 +1,8 @@
+ar\com\educacionit\dao\user\UserRepository.class
+ar\com\educacionit\dao\hibernate\HibernateBaseRepository.class
+ar\com\educacionit\dao\hibernate\HibernateUtils.class
+ar\com\educacionit\dao\hibernate\impl\ProductoRepositoryHibernateImpl.class
+ar\com\educacionit\dao\exceptions\DuplicateException.class
+ar\com\educacionit\dao\ProductoRepository.class
+ar\com\educacionit\dao\exceptions\GenericExeption.class
+ar\com\educacionit\dao\hibernate\impl\UserHibernateRepositoryImpl.class

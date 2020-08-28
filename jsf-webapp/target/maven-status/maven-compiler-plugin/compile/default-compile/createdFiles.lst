@@ -1,0 +1,7 @@
+ar\com\educacionit\web\filters\AuthorizationFilter.class
+ar\com\educacionit\web\managedbeans\producto\ProductoBean.class
+ar\com\educacionit\web\managedbeans\producto\TipoProductoBean.class
+ar\com\educacionit\web\filters\NoCacheFilter.class
+ar\com\educacionit\web\managedbeans\LoginBean.class
+ar\com\educacionit\web\managedbeans\HelloEduitManagedBean.class
+ar\com\educacionit\web\managedbeans\usuario\UsuarioBean.class

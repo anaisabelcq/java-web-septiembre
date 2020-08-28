@@ -1,0 +1,7 @@
+ar\com\educacionit\ws\soap\server\ProductoWSService.class
+ar\com\educacionit\ws\soap\main\ProductoWSSoapMain.class
+ar\com\educacionit\ws\soap\server\WSSoapExeption.class
+ar\com\educacionit\ws\soap\server\App.class
+ar\com\educacionit\services\exceptions\ServiceException.class
+ar\com\educacionit\ws\soap\service\impl\ProductoWSServiceImpl.class
+ar\com\educacionit\ws\soap\service\impl\CreateProductoDto.class

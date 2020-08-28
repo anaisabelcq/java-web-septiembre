@@ -1,0 +1,5 @@
+ar\com\educacionit\ws\rest\resources\ProductoRestWSErrorEnum.class
+ar\com\educacionit\ws\rest\configuracion\CORSFilter.class
+ar\com\educacionit\ws\rest\resources\ProductoRespuestaDTO.class
+ar\com\educacionit\ws\rest\configuracion\Configuracion.class
+ar\com\educacionit\ws\rest\resources\ProductoResource.class
