@@ -7,9 +7,7 @@
     <artifactId>app-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>ar.com.educacionit</groupId>
   <artifactId>jsf-webapp</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>jsf-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -21,19 +19,58 @@
       <scope>test</scope>
     </dependency>
     
-    <!-- jsf-api -->
+    <!-- jsf-api
 	<dependency>
 		<groupId>com.sun.faces</groupId>
 		<artifactId>jsf-api</artifactId>
 		<version>2.1.7</version>
 	</dependency>
  
-    <!-- jsf-impl -->
+    jsf-impl 
 	<dependency>
 		<groupId>com.sun.faces</groupId>
 		<artifactId>jsf-impl</artifactId>
 		<version>2.1.7</version>
+	</dependency>-->
+	
+	<dependency>
+		<groupId>javax.enterprise</groupId>
+		<artifactId>cdi-api</artifactId>
+		<version>1.2</version>
 	</dependency>
+	
+	<dependency>
+		<groupId>org.jboss.weld.servlet</groupId>
+		<artifactId>weld-servlet</artifactId>
+		<version>2.2.13.Final</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>javax.faces</groupId>
+		<artifactId>jsf-api</artifactId>
+		<version>2.1</version>
+	</dependency>
+
+   <!-- Compile/runtime dependencies-->
+  <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+		<scope>provided</scope>
+	</dependency>	
+	<dependency>
+		<groupId>javax.servlet.jsp</groupId>
+		<artifactId>javax.servlet.jsp-api</artifactId>
+		<version>2.3.1</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<!--Boostrap -->	
+	<dependency>
+		<groupId>org.webjars</groupId>
+		<artifactId>bootstrap</artifactId>
+		<version>4.3.1</version>
+	</dependency>   
    
    <!-- core!! -->
 

@@ -8,7 +8,7 @@ public class ProductoWSRestClient2
     public static void main( String[] args ) throws Exception
     {
         
-    	ProductoRestExecutor pre = new ProductoRestExecutor("http://localhost:8080/app-ws-rest-server/api/producto/0001");
+    	ProductoRestExecutor pre = new ProductoRestExecutor("http://localhost:8081/app-ws-rest-server/api/producto/0001");
     	
     	Producto p = pre.executeRestCall();
     	

@@ -24,7 +24,7 @@ public class User {
 	@Column(name ="password", nullable = false)
 	private String password;
 	
-//	private Boolean active;
+	private Boolean active;
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(
@@ -62,12 +62,12 @@ public class User {
 		this.password = password;
 	}
 
-//	public Boolean getActive() {
-//		return active;
-//	}
-//
-//	public void setActive(Boolean active) {
-//		this.active = active;
-//	}
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
 	
 }

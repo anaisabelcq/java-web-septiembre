@@ -8,11 +8,11 @@ public class ProductoWSSoapMain {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Publicando soap en el puerto 8080");
+		System.out.println("Publicando soap en el puerto 8081");
 		
-		Endpoint.publish("http://127.0.0.1:8080/", new ProductoWSServiceImpl());
+		Endpoint.publish("http://127.0.0.1:8081/", new ProductoWSServiceImpl());
 		
-		System.out.println("Se ha iniciado el ws en http://localhost:8080/?wsdl");
+		System.out.println("Se ha iniciado el ws en ");
 	}
 
 }
