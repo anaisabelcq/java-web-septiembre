@@ -69,5 +69,15 @@ public class User {
 	public void setActive(Boolean active) {
 		this.active = active;
 	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+	
+	
 	
 }

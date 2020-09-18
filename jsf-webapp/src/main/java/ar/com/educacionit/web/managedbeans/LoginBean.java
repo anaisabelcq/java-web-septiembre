@@ -2,16 +2,17 @@ package ar.com.educacionit.web.managedbeans;
 
 import java.util.Map;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.faces.context.FacesContext;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import ar.com.educacionit.app.domain.User;
 import ar.com.educacionit.service.UserService;
 import ar.com.educacionit.service.impl.UserServiceImpl;
 import ar.com.educacionit.services.exceptions.ServiceException;
+import ar.com.educacionit.web.managedbeans.usuario.UsuarioBean;
 
-@ManagedBean
+@Named
 @RequestScoped
 public class LoginBean {
 
@@ -23,27 +24,8 @@ public class LoginBean {
 	
 	private UserService userService = new UserServiceImpl();
 	
-	//metodo de login
-	public String login2() {
-		
-		//User user;
-		String redirect;
-		
-		if(this.user.equals("eduit")
-			&& this.password.equals("eduit")) {
-			
-			Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-			sessionMap.put("usuario", "Usuario EduIt");
-			sessionMap.put("nickName", "NickName EduIt");
-			redirect = "login-success.xhtml";
-		}else {
-			this.error = "Usuario / Password invalidos";
-			redirect = "login";
-		}
-		
-		return redirect;
-	}
-	
+	@Inject
+	private UsuarioBean usuarioBean;
 	
 	public String login() {
 		
@@ -52,13 +34,13 @@ public class LoginBean {
 			user = userService.getUserByUserName("ADMIN");
 			
 			if(user !=null && user.getPassword().equals(password)) {
-				Map<String,Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
-				sessionMap.put("usuario", user);
+				
+				this.usuarioBean.setUsuario(user);
+				
 				return "login-success";
 			    
 			}else {
-				error = "Bad User/password";
-				return "login";
+				return "login-fail";
 			}
 		} catch (ServiceException e) {
 			error = e.getMessage();
