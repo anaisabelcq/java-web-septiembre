@@ -2,6 +2,7 @@ package ar.com.educacionit.web.managedbeans.producto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;

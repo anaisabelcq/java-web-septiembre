@@ -52,20 +52,29 @@ public class ProductoServiceImpl implements ProductoService {
 
 	@Override
 	public Producto updateProducto(Producto producto) throws ServiceException {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			return this.productoRepository.updateProducto(producto);
+		} catch (GenericExeption e) {
+			throw new ServiceException("No se pudo actualizar el producto",e);
+		}
 	}
 
 	@Override
 	public Producto eliminarProducto(String codigoProducto) throws ServiceException {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			return this.productoRepository.deleteProducto(codigoProducto);
+		} catch (GenericExeption e) {
+			throw new ServiceException("No se pudo eliminar el producto",e);
+		}
 	}
 
 	@Override
 	public List<TipoProducto> findTipoProductos() throws ServiceException {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			return this.productoRepository.findTipoProductos();
+		} catch (GenericExeption e) {
+			throw new ServiceException("No se pudo obtener los tipos de productos",e);
+		}
 	}
 
 	@Override
