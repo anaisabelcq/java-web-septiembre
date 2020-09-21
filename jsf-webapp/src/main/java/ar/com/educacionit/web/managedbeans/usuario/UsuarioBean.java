@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 
 import ar.com.educacionit.app.domain.User;
@@ -22,6 +23,14 @@ public class UsuarioBean implements Serializable{
 		return this.usuario != null;
 	}
 
+	public String logout() {
+		setUsuario(null);
+		setRoles(null);
+		FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+		
+		return "login?faces-redirect=true";
+	}
+	
 	public User getUsuario() {
 		return usuario;
 	}
