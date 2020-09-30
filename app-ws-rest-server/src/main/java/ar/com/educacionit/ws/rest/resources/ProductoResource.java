@@ -2,6 +2,8 @@ package ar.com.educacionit.ws.rest.resources;
 
 import java.util.List;
 
+import javax.annotation.security.PermitAll;
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -29,6 +31,7 @@ public class ProductoResource {
 	}
 	
 	@GET
+	@PermitAll
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response findAllProductos() {
 		try {
@@ -62,6 +65,7 @@ public class ProductoResource {
 		return response.build();
 	}
 	
+	@RolesAllowed({"ADMIN","USER"})
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
